@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebNova Studio - Presupuesto</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="assets/imagenes/logo.png" alt="Logo" width="120" />
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a class="activo" href="presupuesto.html">Presupuesto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="seccion">
+        <h2>Solicitar presupuesto</h2>
+
+        <form>
+          <label>Nombre:</label>
+          <input
+            type="text"
+            required
+            pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,40}$"
+            title="El nombre solo puede contener letras y espacios(entre 2 y 40 caracteres)"
+          />
+
+          <label>Email:</label>
+          <input type="email" required />
+
+          <label>Teléfono:</label>
+          <input type="tel" pattern="[0-9]{9}" required />
+
+          <label>Solicite más información:</label>
+          <textarea required></textarea>
+
+          <label>
+            <input type="checkbox" required />
+            Acepto la Política de privacidad
+          </label>
+
+          <button class="boton" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Síguenos en redes:</p>
+      <a href="#"
+        ><img src="assets/imagenes/iconos/facebooklogo.svg" alt=""
+      /></a>
+      <a href="#"
+        ><img src="assets/imagenes/iconos/twitterlogo.svg" alt=""
+      /></a>
+      <a href="#"
+        ><img src="assets/imagenes/iconos/instagramlogo.svg" alt=""
+      /></a>
+      <p>WebNova Studio • Calle Dalí 54 • Sevilla</p>
+      <p>Aviso legal</p>
+    </footer>
+  </body>
+</html>

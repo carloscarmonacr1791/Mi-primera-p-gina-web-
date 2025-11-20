@@ -1,0 +1,120 @@
+/*------------VARIABLES-------------*/
+
+:root {
+  --font-family: "Merriweather", serif;
+  --font-family-secondary: "Unbounded", sans-serif;
+}
+
+/* ----------------- ESTILOS GENERALES ----------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family:var(--font-family-secondary);
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background-color: #0a3d62;
+  color: white;
+  padding: 15px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a.activo {
+  border-bottom: 3px solid #3dc1d3;
+}
+
+footer {
+  background-color: #0a3d62;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+/* ---------- SECCIÓN INICIO ---------- */
+.seccion {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.seccion h2 {
+  color: #0a3d62;
+}
+
+/* ---------- GALERÍA ---------- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.galeria img {
+  width: 60vh;
+  border-radius: 5px;
+}
+
+/* ---------- FORMULARIO ---------- */
+form {
+  width: 60%;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.boton {
+  background-color: #0a3d62;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+}
